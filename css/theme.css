@@ -23,6 +23,10 @@ body {
   font-size: 40px;
 }
 
+.header p {
+  font-size: 120%;
+}
+
 /* Style the top navigation bar */
 .navbar {
   overflow: hidden;
