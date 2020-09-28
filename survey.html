@@ -6,7 +6,7 @@
 
   <p>This will display all items:</p>
 <p id="demo"></p>
-  <p>This will display only the first item:</p>
+  <p>This will display only the first item in each:</p>
   <p id="demo2"></p>
 
 <script>
@@ -23,7 +23,7 @@ xmlhttp.onreadystatechange = function() {
      txt += myArr[i] + '<br>';
       document.getElementById("demo").innerHTML = txt;
     }
-      document.getElementById("demo2").innerHTML = myArr[0][0];
+      document.getElementById("demo2").innerHTML = myArr[0][0] + ' ' + myArr[1][0];
   }
 };
 xmlhttp.open("GET", "json_demo_array.txt", true);
