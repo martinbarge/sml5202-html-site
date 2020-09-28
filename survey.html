@@ -21,7 +21,7 @@ xmlhttp.onreadystatechange = function() {
     var myArr = JSON.parse(this.responseText);
      for (i = 0; i < myArr.length; i++) {
      txt += myArr[i] + '<br>';
-     subtxt = txt[i];
+     subtxt = myArr[i][i];
       document.getElementById("demo").innerHTML = txt + ' ' + subtxt;
     }
       document.getElementById("demo2").innerHTML = myArr[0][0];
