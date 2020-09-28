@@ -12,6 +12,7 @@
 <script>
 var i;
 var txt = ''; //must be defined as string
+var subtxt = '';
 var myArr;
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
@@ -19,7 +20,8 @@ xmlhttp.onreadystatechange = function() {
     //var i, txt, myArr;
     var myArr = JSON.parse(this.responseText);
      for (i = 0; i < myArr.length; i++) {
-     txt += myArr[i][i] + '<br>';
+     txt += myArr[i] + '<br>';
+     subtxt += txt[i];
       document.getElementById("demo").innerHTML = txt;
     }
       document.getElementById("demo2").innerHTML = myArr[0][0];
