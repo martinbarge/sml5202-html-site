@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Content as Array.</h2>
+<p>Content written as an JSON array will be converted into a JavaScript array.</p>
+
+<p id="demo"></p>
+
 <script>
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
@@ -7,5 +16,10 @@ xmlhttp.onreadystatechange = function() {
   }
 };
 xmlhttp.open("GET", "json_demo_array.txt", true);
-xmlhttp.send(); 
+xmlhttp.send();
 </script>
+
+<p>Take a look at <a href="json_demo_array.txt" target="_blank">json_demo_array.txt</a></p>
+
+</body>
+</html>
