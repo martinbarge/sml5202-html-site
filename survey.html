@@ -17,13 +17,12 @@ var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     //var i, txt, myArr;
-    var myArr = JSON.parse(this.responseText);
+    var myArr = JSON.parse(this.responseText[0]);
      for (i = 0; i < myArr.length; i++) {
      txt += myArr[i] + '<br>';
       document.getElementById("demo").innerHTML = txt;
     }
       document.getElementById("demo2").innerHTML = myArr[0];
-
   }
 };
 xmlhttp.open("GET", "json_demo_array.txt", true);
