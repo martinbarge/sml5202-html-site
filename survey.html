@@ -4,7 +4,10 @@
 <h2>Content as Array.</h2>
 <p>Content written as an JSON array will be converted into a JavaScript array.</p>
 
+  <p>This will display all items:</p>
 <p id="demo"></p>
+  <p>This will display only the first item:</p>
+  <p id="demo2"></p>
 
 <script>
 var i;
@@ -19,6 +22,8 @@ xmlhttp.onreadystatechange = function() {
      txt += myArr[i] + '<br>';
       document.getElementById("demo").innerHTML = txt;
     }
+      document.getElementById("demo2").innerHTML = myArr[0];
+
   }
 };
 xmlhttp.open("GET", "json_demo_array.txt", true);
