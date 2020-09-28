@@ -22,7 +22,7 @@ xmlhttp.onreadystatechange = function() {
      for (i = 0; i < myArr.length; i++) {
      txt += myArr[i] + '<br>';
      subtxt += txt[i];
-      document.getElementById("demo").innerHTML = txt;
+      document.getElementById("demo").innerHTML = txt + ' ' + subtxt;
     }
       document.getElementById("demo2").innerHTML = myArr[0][0];
   }
